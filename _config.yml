@@ -1,7 +1,14 @@
+languages: ["en", "zh"]
+exclude_from_localizations: ["assets", "CNAME"]
+defaultLang: zh
+languageNames:
+  zh: Chinese
+  en: English
+
 collections:
-  authors:
+  staffs:
     output: true
-    
+
 defaults:
   - scope:
       path: ""
@@ -12,8 +19,8 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "post"
+      layout: "POST"
   - scope:
       path: ""
     values:
-      layout: "default"
+      layout: "BASE"

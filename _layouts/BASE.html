@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{page.title}} | 人大附中 - 中外合作办学项目</title>
+	<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.bootcss.com/materialize/1.0.0-rc.2/css/materialize.min.css" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+  <script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  {% if page.title == '首页' %}
+  <style>
+  .nav.card-title{
+    background: rgba(66, 66, 66, 0.6);
+    padding: 0.3rem 1rem !important;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .news.card>.card-content{
+    padding: 0.6rem 1rem;
+  }
+  .news.card-title{
+    font-size: 1rem;
+  }
+  </style>
+  {% endif %}
+</head>
+<body>
+	<div class="container">
+		<header class="hide-on-med-and-down">
+			<div class="valign-wrapper row">
+				<a class="logo col m2" href="/"><img class="responsive-img logo" src="/assets/img/page_logo.jpg"></a>
+				<div class="title right-align col m10">
+					<h1 class="text">人大附中中外合作办学项目</h1>
+					<div class="line"></div>
+				</div>
+			</div>
+		</header>
+		<header class="hide-on-large-only">
+			<div class="title">
+				<h1 class="page-title">人大附中中外合作办学项目</h1>
+				<div class="line"></div>
+			</div>
+		</header>
+	</div>
+		{{ content }}
+	<footer class="red darken-4 page-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">人大附中中外合作办学项目</h5>
+					<p class="grey-text text-lighten-4">北京市海淀区中关村大街37号 100080</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">相关链接</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="https://www.ibo.org">IBO 国际组织</a></li>
+						<li><a class="grey-text text-lighten-3" href="http://www.cambridgeinternational.org">剑桥大学考试委员会</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+			2018 © 中国人民大学附属中学 版权所有
+			<a class="grey-text text-lighten-4 right" href=""></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

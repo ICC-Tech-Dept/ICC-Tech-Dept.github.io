@@ -1,3 +1,49 @@
-.current {
-  color: green;
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+header>.row{
+  height: 10rem;
+}
+header>.title{
+  height: 8rem;
+  padding: 2.5rem 0;
+}
+.logo.col>.logo{
+  width: 70%;
+  margin-left: 10%;
+}
+h5{
+  font-size:1.4rem
+}
+.page-title, .title>.text{
+  font-size: 2.8rem;
+  color: #999;
+  margin-right: -0.8rem
+}
+.page-title{
+  font-size: 1.8rem;
+  margin: 0.4rem 0;
+}
+.title>.line{
+  border-bottom: 2px solid rgb(225, 2, 25);
+  width: 80%;
+  float:right;
+  margin-right: -0.6rem
+}
+.blank {
+  height: 4rem;
+  width: 100%;
+}
+.text.container {
+  width: 55%;
+}
+@media only screen and (max-width: 601px) {
+  .text.container {
+    width: 95%;
+  }
 }

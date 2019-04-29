@@ -1,24 +1,23 @@
 ---
-layout: default
+layout: BASE
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
 
 <div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <h1 class="red-text">404 页面无法访问 :(</h1>
+  <br/>
+  <a href="/">回到首页</a>
+  <br/>
+  <p class="404-poem"></p>
+  <div class="blank"></div>
+  <script>
+    texts = [
+    "<p>every day feels like a blank page<br/>I stare into emptiness<br/>as words fly into one ear<br/>and out the other<br/>always telling myself<br/>that I'll make something<br/>out of each new page I am given<br/>that I might fold it into something new<br/>but I'm always too afraid I might mess up<br/>the structured square that is my life.<br/> —— Katie</p>",
+    "<p>When I call out<br/>into the nothingness of my bleak existence,<br/>I desperately scream one thing:<br/>&quot;Marco...&quot;<br/> —— Chris Bee</p>",
+    "<p>When did we get lost?<br/>Wasn't it you who taught me everything?<br/>Why was I so afraid to love you?<br/><br/>When there's a will there's a way.<br/>That's what you taught me.<br/>I'm trying to live up to your expectation<br/>but you always gave me a choice.<br/> —— Charlie Wonder</p>",
+    "<p>Nos autem non in vacuum cucurri caeca.<br/>Perdidit in tenebris sumus. <br/>Ex visus, ex animo. <br/>Nos iam esset desperato.<br/> —— Invisible</p>",
+    "<p>I want<br/>a quiet mind.<br/>A slice of space time<br/>carved out, specifically mine.<br/>I lost and found fullness in the void.<br/>The promise of isolated existence,<br/>of a transcendent world where I forget.<br/> —— Aspen Welsch</p>"
+    ];
+    $('.404-poem').html(texts[Math.floor(Math.random() * texts.length)]);
+  </script>
 </div>
