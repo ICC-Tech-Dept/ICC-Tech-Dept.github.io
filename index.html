@@ -1,17 +1,96 @@
 ---
-layout: default
-title: RDFZ ICC
+title: 首页
 ---
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-  </head>
-  <body>
-    <h1>TEST</h1>
-    ...
-    <h1>{{ "Hello World!" | downcase }}</h1>
-
-  </body>
-</html>
+<div class="container">
+	<div class="carousel carousel-slider">
+		<a class="carousel-item" href="/about"><img src="/assets/img/banner/banner1.jpg"></a>
+		<a class="carousel-item" href="#"><img src="/assets/img/banner/banner2.jpg"></a>
+	</div>
+	<section>
+		<h5 class="red-text">页面导航</h5>
+		<div class="row">
+			<div class="col s6 m3">
+				<a href="/news">
+					<div class="hoverable card">
+						<div class="card-image"><img src="/assets/img/square/about.jpg"><span class="nav card-title">最新资讯</span></div>
+					</div>
+				</a>
+			</div>
+			<div class="col s6 m3">
+				<a href="/about">
+					<div class="hoverable card">
+						<div class="card-image"><img src="/assets/img/square/academics.jpg"><span class="nav card-title">项目介绍</span></div>
+					</div>
+				</a>
+			</div>
+			<div class="col s6 m3">
+				<a href="/faculty">
+					<div class="hoverable card">
+						<div class="card-image"><img src="/assets/img/square/faculty.jpg"><span class="nav card-title">师资力量</span></div>
+					</div>
+				</a>
+			</div>
+			<div class="col s6 m3">
+				<a href="/matriculation">
+					<div class="hoverable card">
+						<div class="card-image"><img src="/assets/img/square/matriculation.jpg"><span class="nav card-title">办学成果</span></div>
+					</div>
+				</a>
+			</div>
+			<div class="col s6 m3">
+				<a href="/culture">
+					<div class="hoverable card">
+						<div class="card-image"><img src="/assets/img/square/culture.jpg"><span class="nav card-title">项目文化</span></div>
+					</div>
+				</a>
+			</div>
+			<div class="col s6 m3">
+				<a href="http://www.rdfz.cn/mzszl/zwhzbxzs/">
+					<div class="hoverable card">
+						<div class="card-image"><img src="/assets/img/square/admission.jpg"><span class="nav card-title">招生专栏</span></div>
+					</div>
+				</a>
+			</div>
+			<div class="col s6 m3">
+				<a href="/contacts">
+					<div class="hoverable card">
+						<div class="card-image"><img src="/assets/img/square/contacts.jpg"><span class="nav card-title">联系我们</span></div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	<div class="row">
+		<div class="col s12 m7">
+			<section>
+				<h5 class="red-text">培养目标</h5>
+				<div class="row">
+					<div class="col s12 m8"><p>国际主义精神和文化多元性是我们全体师生的基本特征。</p><p>人大附中中外合作办学项目致力于培养富有探究精神、知识渊博、懂得关怀的年轻人，使他们能够充分发挥自己的潜力。</p><p>他们应该通过开拓视野、同情他人来实现祖国腾飞和人类进步的目标。</p></div>
+					<div class="col s12 m4"><img class="responsive-img" src="/assets/img/icc_standard_text.png"></div>
+				</div>
+			</section>
+		</div>
+		<div class="col s12 m1"></div>
+		<div class="col s12 m4">
+			<section>
+				<h5 class="red-text">最新资讯</h5>
+				<div class="row">
+					<div class="col s12">
+						<div class="news card"><div class="card-content white-text"><a class="news black-text card-title" href="{{ site.data.news_feed[0]['url'] }}">{{ site.data.news_feed[0]['title'] }}</a></div></div>
+						<div class="news card"><div class="card-content white-text"><a class="news black-text card-title" href="{{ site.data.news_feed[1]['url'] }}">{{ site.data.news_feed[1]['title'] }}</a></div></div>
+						<div class="news card"><div class="card-content white-text"><a class="news black-text card-title" href="{{ site.data.news_feed[2]['url'] }}">{{ site.data.news_feed[2]['title'] }}</a></div></div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	</div>
+	<script>
+	$(document).ready(function(){
+		$('.carousel').carousel({
+			fullWidth: true,
+			indicators: true
+		});
+	});
+	</script>
+</div>

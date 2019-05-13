@@ -1,0 +1,25 @@
+---
+title: 最新资讯
+---
+<div class="container">
+	<section>
+		<h5 class="red-text">最新资讯</h5>
+		<div class="row">
+		{% for post in site.posts %}
+			<div class="col s12">
+				<div class="news card">
+					<div class="card-content grey-text">
+						<a class="news black-text card-title" href="{{ post['url'] }}">{{ post['title'] }}</a>
+						<p>{{ post.date | date_to_string }}</p>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+		</div>
+	</section>
+  <div style="blank"></div>
+	<script>
+	$(document).ready(function(){
+	});
+	</script>
+</div>
